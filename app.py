@@ -34,7 +34,7 @@ while True:
                             print("Status code of {} is {}".format(anchor["href"], req.status_code))
 
                             if req.status_code == requests.codes.ok:
-                                fetched_week += 1
+                                current_requests += 1
     else:
         current_requests = 0
         fetched_week = current_week

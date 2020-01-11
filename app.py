@@ -4,6 +4,7 @@ from datetime import datetime
 import requests
 import re
 import os
+import time
 
 load_dotenv()
 
@@ -38,6 +39,8 @@ while True:
                                 if req.status_code == requests.codes.ok:
                                     current_requests += 1
                                     print("CURRENT REQUESTS: {}".format(current_requests))
+
+                time.sleep(300)
         else:
             current_requests = 0
             fetched_week = current_week

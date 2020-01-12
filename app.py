@@ -39,9 +39,7 @@ while True:
                                 if req.status_code == requests.codes.ok:
                                     current_requests += 1
                                     print("CURRENT REQUESTS: {}".format(current_requests))
-                                    time.sleep(45)
-
-                time.sleep(300)
+                                    time.sleep(420)
         else:
             current_requests = 0
             fetched_week = current_week
